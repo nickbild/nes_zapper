@@ -58,6 +58,18 @@ So doing the math, that gives it (1 / 60) / 240 = 0.000069444 seconds to draw a 
 
 Back to Duck Hunt for a moment. The Zapper has a photodiode that senses light. It does not see white boxes. It sees the initial black frame as darkness, then it sees the individual, bright scan lines flashing on and off at 14.4 kilohertz, assuming the barrel is pointed at them. It’s this change from dark to bright at a high frequency that causes a hit to be counted. If this change in light happens at the exact right moment, when the frame containing the white square was being drawn after the trigger was pulled, you’ve got a dead duck.
 
+This also explains why the gun does not work with modern TVs. LCD TVs don’t have an electron beam rapidly tracing out an image, but instead have individual LCD pixels that light up. And by comparison, they are very, very slow. Even a really high quality TV with a 1 millisecond pixel update time is 0.001 seconds. That’s way too slow!
+
+### How Can the Zapper be Triggered Without an NES?
+
+So if you want to repurpose a light gun, do you have to exactly mimic a CRT TV? That’s what I wanted to find out, so I built this test rig:
+
+![](https://raw.githubusercontent.com/nickbild/nes_zapper/refs/heads/main/media/test_rig.png)
+
+For reference, here is the pinout of the Zapper’s connector:
+
+![](https://raw.githubusercontent.com/nickbild/nes_zapper/refs/heads/main/media/pinout.png)
+
 ## About the Author
 
 [Nick A. Bild, MS](https://nickbild79.firebaseapp.com/#!/)
