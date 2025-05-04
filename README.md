@@ -1,1 +1,3 @@
-# nes_zapper
+# How the NES Zapper REALLY Works
+
+Coming soon!
