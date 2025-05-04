@@ -38,6 +38,19 @@ Finally gameplay resumes with either a hit or a miss being registered, depending
 
 ![](https://raw.githubusercontent.com/nickbild/nes_zapper/refs/heads/main/media/duck_hunt_hit_5.png)
 
+### CRT TV Operation
+
+To understand what is really happening here, you need to know how a CRT TV works.
+
+![](https://raw.githubusercontent.com/nickbild/nes_zapper/refs/heads/main/media/mario_tv.png)
+
+When we look at the screen, we see an image. But it’s not really there, we only see it due to persistence of vision. Inside the TV, an electron beam moves very rapidly to excite the phosphorescent screen, one horizontal line at a time. If we could slow it way down, it would look something like this:
+
+![](https://raw.githubusercontent.com/nickbild/nes_zapper/refs/heads/main/media/mario_scanline.png)
+
+The current line being drawn is the only one that is actually lit up, and the rest are dark. Everything else is just a trick of the mind.
+
+
 ## About the Author
 
 [Nick A. Bild, MS](https://nickbild79.firebaseapp.com/#!/)
