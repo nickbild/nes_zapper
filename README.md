@@ -2,4 +2,4 @@
 
 Coming soon!
 
-!()[https://raw.githubusercontent.com/nickbild/nes_zapper/refs/heads/main/media/logo.jpg]
+![](https://raw.githubusercontent.com/nickbild/nes_zapper/refs/heads/main/media/logo.jpg)
