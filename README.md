@@ -80,6 +80,16 @@ I have it flashing the light at frequencies above and below the expected 14.4 ki
 
 The bottom trace is the hit signal, and when it goes high, it is registering a hit. What I found is that it transitions to high when the frequency is between about 20kHz and 13.5kHz, so there is some wiggle room in there.
 
+### The Hardware Teardown
+
+I completely disassembled the Zapper ([see the video](https://www.youtube.com/watch?v=cWvGYfH0B30)).
+
+![](https://raw.githubusercontent.com/nickbild/nes_zapper/refs/heads/main/media/teardown.png)
+
+After examining the hardware, I made this schematic:
+
+![](https://raw.githubusercontent.com/nickbild/nes_zapper/refs/heads/main/media/zapper_schematic.svg)
+
 ## About the Author
 
 [Nick A. Bild, MS](https://nickbild79.firebaseapp.com/#!/)
