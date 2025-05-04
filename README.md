@@ -90,6 +90,22 @@ After examining the hardware, I made this schematic:
 
 ![](https://raw.githubusercontent.com/nickbild/nes_zapper/refs/heads/main/media/zapper_schematic.svg)
 
+The key component is the Sharp IR3T07A:
+
+![](https://raw.githubusercontent.com/nickbild/nes_zapper/refs/heads/main/media/IR3T07A.png)
+
+This chip clearly determines what frequencies of light the Zapper responds to, but unfortunately, it is completely undocumented. There is no datasheet, and it seems no one outside of Nintendo in the 1980s knows how it works. Possibly the values of the capacitors and resistors would modify the frequency range, but I don't know that. I don't want to fry a 40 year old chip that is long out of production, so I don't really want to try either.
+
+### Best Bets for Repurposing the Hardware
+
+The good news is that, even with an unknown chip handling the light detection, there are still some options for repurposing the hardware. If your application allows, you can set up an LED beacon that flashes somewhere in the acceptable frequency range to register a hit. This would be good for controlling things around your home, for example. If you do not have that luxury — like if you want to use the Zapper with a modern TV or another console — there might still be another option. The anode of the photodiode reports changes in light levels as chages in voltage. Here is a trace:
+
+![](https://raw.githubusercontent.com/nickbild/nes_zapper/refs/heads/main/media/photodiode_trace.png)
+
+This analog signal could be used to differentiate between bright and dark spots on even a modern TV, for example. There is no cheating protection, but for most personal projects, that is probably not a concern anyway. The hit pin could even be re-routed to connect to the photodiode to keep things neat. But of course, don't do this unless you understand what you are doing!
+
+For more details, be sure to check out [the video](https://www.youtube.com/watch?v=cWvGYfH0B30).
+
 ## About the Author
 
 [Nick A. Bild, MS](https://nickbild79.firebaseapp.com/#!/)
