@@ -74,7 +74,7 @@ Both the trigger and hit lines need pull-up resistors. The trigger is super simp
 
 To find out what exactly the light sensor responds to, I have a white LED being rapidly switched on and off at varying frequencies by an Arduino clone. That light shines right at the photodiode inside the Zapper.
 
-I have it flashing the light at frequencies above and below the expected 14.4 kilohertz triggering frequency. I am monitoring the LED switching frequency and the response of the hit signal with a logic analyzer. Here is a signal trace (there is more detail in [the video](https://www.youtube.com/watch?v=cWvGYfH0B30)):
+I have it flashing the light at frequencies above and below the expected 14.4 kilohertz triggering frequency. I am monitoring the LED switching frequency and the response of the hit signal with a logic analyzer. Here is a signal trace (there is more detail in [the video](https://www.youtube.com/watch?v=cWvGYfH0B30), or see [here](https://github.com/nickbild/nes_zapper/blob/main/media/range_zoom.sal)):
 
 ![](https://raw.githubusercontent.com/nickbild/nes_zapper/refs/heads/main/media/trace.png)
 
