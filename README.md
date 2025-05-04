@@ -14,3 +14,7 @@ Read on to find:
 
 **Check out the video on YouTube:**
 <a href="https://www.youtube.com/watch?v=cWvGYfH0B30">![](https://raw.githubusercontent.com/nickbild/nes_zapper/refs/heads/main/media/me_pointing_zapper_video_preview.jpg)</a>
+
+## About the Author
+
+[Nick A. Bild, MS](https://nickbild79.firebaseapp.com/#!/)
