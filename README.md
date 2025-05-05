@@ -52,11 +52,11 @@ The current line being drawn is the only one that is actually lit up, and the re
 
 ### What the Zapper Really "Sees"
 
-So how is this relevant to the operation of the Zapper? Well, the NES Picture Processing Unit generated 60 frames of video per second, and that was at a 256x240 pixel resolution.
+So how is this relevant to the operation of the Zapper? Well, the NES Picture Processing Unit generated 60 frames of video per second, and that was at a 256x240 pixel resolution (plus 22 scanlines that are not visible).
 
-So doing the math, that gives it (1 / 60) / 240 = 0.000069444 seconds to draw a single scanline. That is equivalent to a frequency of 14.4 kilohertz (1 / 14400 = 0.000069444).
+So doing the math, that gives it (1 / 60) / 262 = 0.000063613 seconds to draw a single scanline. That is equivalent to a frequency of ~15.7 kilohertz (1 / 15722 = 0.000063605).
 
-Back to Duck Hunt for a moment. The Zapper has a photodiode that senses light. It does not see white boxes. It sees the initial black frame as darkness, then it sees the individual, bright scanlines flashing on and off at 14.4 kilohertz, assuming the barrel is pointed at them. It’s this change from dark to bright at a high frequency that causes a hit to be counted. If this change in light happens at the exact right moment, when the frame containing the white square was being drawn after the trigger was pulled, you’ve got a dead duck.
+Back to Duck Hunt for a moment. The Zapper has a photodiode that senses light. It does not see white boxes. It sees the initial black frame as darkness, then it sees the individual, bright scanlines flashing on and off at 15.7 kilohertz, assuming the barrel is pointed at them. It’s this change from dark to bright at a high frequency that causes a hit to be counted. If this change in light happens at the exact right moment, when the frame containing the white square was being drawn after the trigger was pulled, you’ve got a dead duck.
 
 This also explains why the gun does not work with modern TVs. LCD TVs don’t have an electron beam rapidly tracing out an image, but instead have individual LCD pixels that light up. And by comparison, they are very, very slow. Even a really high quality TV with a 1 millisecond pixel update time is 0.001 seconds. That’s way too slow!
 
@@ -74,7 +74,7 @@ Both the trigger and hit lines need pull-up resistors. The trigger is super simp
 
 To find out what exactly the light sensor responds to, I have a white LED being rapidly switched on and off at varying frequencies by an Arduino clone. That light shines right at the photodiode inside the Zapper.
 
-I have it flashing the light at frequencies above and below the expected 14.4 kilohertz triggering frequency. I am monitoring the LED switching frequency and the response of the hit signal with a logic analyzer. Here is a signal trace (there is more detail in [the video](https://www.youtube.com/watch?v=cWvGYfH0B30), or see [here](https://github.com/nickbild/nes_zapper/blob/main/media/range_zoom.sal)):
+I have it flashing the light at frequencies above and below the expected 15.7 kilohertz triggering frequency. I am monitoring the LED switching frequency and the response of the hit signal with a logic analyzer. Here is a signal trace (there is more detail in [the video](https://www.youtube.com/watch?v=cWvGYfH0B30), or see [here](https://github.com/nickbild/nes_zapper/blob/main/media/range_zoom.sal)):
 
 ![](https://raw.githubusercontent.com/nickbild/nes_zapper/refs/heads/main/media/trace.png)
 
