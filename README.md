@@ -17,7 +17,7 @@ Read on to find:
 
 ## How It Works
 
-If you have ever tried to cheat at a Zapper game by pointing it at a light bulb and pulling the trigger, you’ll know that that doesn’t work. Unlike earlier light guns, the Zapper had some simple yet effective mechanisms designed to prevent cheating. And it is these mechanisms that keep it from working on a modern TV, and make it difficult to repurpose in general.
+If you have ever tried to cheat at a Zapper game by pointing it at a light bulb and pulling the trigger, you’ll know that that doesn’t work. Unlike earlier light guns, the Zapper had some simple yet effective mechanisms designed to prevent cheating. And it is these mechanisms that keep it from working on a modern TV, and that make it difficult to repurpose in general.
 
 The first safeguard is in the way that the Zapper detects light. It doesn’t just trigger a hit when it sees brightness; rather it’s changes in brightness level at a specific frequency. Before going any further with this, it is helpful to consider how this worked with an NES and a CRT TV.
 
