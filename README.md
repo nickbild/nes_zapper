@@ -54,9 +54,9 @@ The current line being drawn is the only one that is actually lit up, and the re
 
 So how is this relevant to the operation of the Zapper? Well, the NES Picture Processing Unit generated 60 frames of video per second, and that was at a 256x240 pixel resolution.
 
-So doing the math, that gives it (1 / 60) / 240 = 0.000069444 seconds to draw a single scan line. That is equivalent to a frequency of 14.4 kilohertz (1 / 14400 = 0.000069444).
+So doing the math, that gives it (1 / 60) / 240 = 0.000069444 seconds to draw a single scanline. That is equivalent to a frequency of 14.4 kilohertz (1 / 14400 = 0.000069444).
 
-Back to Duck Hunt for a moment. The Zapper has a photodiode that senses light. It does not see white boxes. It sees the initial black frame as darkness, then it sees the individual, bright scan lines flashing on and off at 14.4 kilohertz, assuming the barrel is pointed at them. It’s this change from dark to bright at a high frequency that causes a hit to be counted. If this change in light happens at the exact right moment, when the frame containing the white square was being drawn after the trigger was pulled, you’ve got a dead duck.
+Back to Duck Hunt for a moment. The Zapper has a photodiode that senses light. It does not see white boxes. It sees the initial black frame as darkness, then it sees the individual, bright scanlines flashing on and off at 14.4 kilohertz, assuming the barrel is pointed at them. It’s this change from dark to bright at a high frequency that causes a hit to be counted. If this change in light happens at the exact right moment, when the frame containing the white square was being drawn after the trigger was pulled, you’ve got a dead duck.
 
 This also explains why the gun does not work with modern TVs. LCD TVs don’t have an electron beam rapidly tracing out an image, but instead have individual LCD pixels that light up. And by comparison, they are very, very slow. Even a really high quality TV with a 1 millisecond pixel update time is 0.001 seconds. That’s way too slow!
 
