@@ -70,7 +70,7 @@ For reference, here is the pinout of the Zapper’s connector:
 
 ![](https://raw.githubusercontent.com/nickbild/nes_zapper/refs/heads/main/media/pinout.png)
 
-Both the trigger and hit lines need pull-up resistors. The trigger is super simple, Pull it and it grounds the signal. It is completely independent of light sensing even though a lot of explanations out there link them. That is definitely not the case.
+Both the trigger and hit lines need pull-up resistors. The trigger is super simple, pull it and it grounds the signal. It is completely independent of light sensing even though a lot of explanations out there link them. That is definitely not the case.
 
 To find out what exactly the light sensor responds to, I have a white LED being rapidly switched on and off at varying frequencies by an Arduino clone. That light shines right at the photodiode inside the Zapper.
 
